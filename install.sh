@@ -37,7 +37,9 @@ else
   exit 1
 fi
 
-# Replace current theme to Kimwz.
-sed -i "s/ZSH_THEME='.*'/ZSH_THEME='kimwz'/g" "$HOME/.zshrc" \
+# Replace current theme to new theme.
+sed -ie "s/ZSH_THEME=.*/ZSH_THEME='kimwz'/g" "$HOME/.zshrc" \
 || error "Cannot change theme in ~/.zshrc. Please, do it by yourself." \
 && message "Done! Please, reload your terminal."
+
+exec zsh
