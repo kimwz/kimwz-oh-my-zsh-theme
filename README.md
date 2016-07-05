@@ -1,3 +1,5 @@
+![](./theme.jpg)
+
 ## Requirements
 
 For correct work you will first need:
