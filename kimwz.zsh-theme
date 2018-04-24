@@ -29,6 +29,8 @@ ${git_info} \
 %{$terminfo[bold]$fg[black]%}[%*]
 "
 
+# default alias
+alias ll="ls -al"
 
 if [[ "$USER" == "root" ]]; then
 PROMPT="
