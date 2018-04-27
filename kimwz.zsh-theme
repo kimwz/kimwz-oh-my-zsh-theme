@@ -30,7 +30,9 @@ ${git_info} \
 "
 
 # default alias
-alias ll="ls -al"
+alias ll="ls -alh"
+ls1() {ls -t $@ | tail -n +2}
+rm1() {ls -t $@ | tail -n +2 | xargs rm -rf}
 
 if [[ "$USER" == "root" ]]; then
 PROMPT="
